@@ -11036,3 +11036,52 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+.alrazy-title {
+  position: relative;
+  overflow: hidden;
+}
+.alrazy-title:after {
+  content: '';
+  -webkit-animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+          animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes underline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes underline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+.alrazy-title .word {
+  display: inline-block;
+  -webkit-animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+          animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: calc( .5s + (.1s * var(--word-index)) );
+          animation-delay: calc( .5s + (.1s * var(--word-index)) );
+}
+@-webkit-keyframes slide-up {
+  from {
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
+}
+@keyframes slide-up {
+  from {
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
+}
+.splitting-mark {
+  color: #FFF !important;
+}
+
