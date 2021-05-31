@@ -7308,6 +7308,7 @@ textarea.form-control-lg {
 
 .text-lowercase {
   text-transform: lowercase !important;
+  color: #e6a756;
 }
 
 .text-uppercase {
